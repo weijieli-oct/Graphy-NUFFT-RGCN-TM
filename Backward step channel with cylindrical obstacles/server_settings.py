@@ -1,0 +1,28 @@
+
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+
+
+ACTION = "train"
+DEVICE = "cuda:0"
+
+
+EXPERIMENT = "step_three_cylinders_medium"
+RE_LIST = [100., 150.]
+AMPLITUDE = 0.0005
+
+
+TRAINING_OVERRIDES = {}
+RUNS_DIRECTORY = ROOT / "runs"
+REBUILD_MESH = False
+SAVE_MESH_FIGURES = True
+PLOT_AFTER_SOLVE = True
+STATISTICS_START_TIME = 100.0
+
+RUN_UNSEEN_AFTER_TRAIN = False
+UNSEEN_RE = [60., 80., 120.]
+SOURCE_CHECKPOINT = None
+RESUME_CHECKPOINT = None
+TRANSFER_CONFIG = None
+INITIALIZE_CHECKPOINT = None
